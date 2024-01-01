@@ -1,0 +1,40 @@
+    .hexagon {
+      width: 100px; /* Ajusta el ancho según tus necesidades */
+      height: 58px; /* Calculado para un hexágono regular con esquinas redondeadas */
+      background-color: #1f1e1e; /* Cambia el color de fondo según tus preferencias */
+      position: relative;
+      display: flex;
+      margin:2rem  1rem;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-size: 2.3rem;
+      color: #daf6ff;
+      text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+      content: '';
+      width: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .hexagon:before {
+      top: -29px;
+      border-bottom: 29px solid #1f1e1e; /* Mismo color de fondo que el hexágono principal */
+    }
+
+    .hexagon:after {
+      bottom: -29px;
+      border-top: 29px solid #1f1e1e; /* Mismo color de fondo que el hexágono principal */
+    }
+
+    .cont{
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+    }
